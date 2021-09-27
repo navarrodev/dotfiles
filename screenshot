@@ -1,0 +1,1 @@
+scrot -s '%Y-%m-%d-%H:%M:%S_.png'

@@ -73,10 +73,12 @@ nnoremap <C-Left> :bp<cr>
 nnoremap <c-x> :bp\|bd #<cr>
 
 ">>>>>> Análise de Código
-let g:ale_linters = {'python': ['flake8', 'pylint'], 'javascript': ['eslint']}
+let g:ale_linters = {'python': ['flake8', 'pylint'], 'javascript': ['eslint'], 'html': ['htmlhint'], 'css': ['stylelint']} 
 let g:ale_completion_enabled = 0
-let g:ale_fixers = {}
+let g:ale_fixers = {'html': ['prettier']}
 let g:ale_fixers.python = ['black']
+let g:ale_linters_explicit = 1
+let g:ale_fix_on_save = 1
 ">>>>>>>>COC
 source ~/.vim/coc.nvimrc
 
