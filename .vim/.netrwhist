@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/'
+let g:netrw_dirhist_2='/home'
+let g:netrw_dirhist_1='/home/navarro'
+let g:netrw_dirhist_0='/home/navarro/.vimrc'
+let g:netrw_dirhist_9='/home/navarro/.conky/Gotham'
+let g:netrw_dirhist_8='/home/navarro/.conky'
+let g:netrw_dirhist_7='/home/navarro/.conky/Gotham'
+let g:netrw_dirhist_6='/home/navarro/.conky'
+let g:netrw_dirhist_5='/home/navarro/.conky/Gotham'
+let g:netrw_dirhist_4='/home/navarro/.conky'
