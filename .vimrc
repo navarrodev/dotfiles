@@ -68,8 +68,8 @@ let g:airline_theme='light'
 
 let g:airline#extensions#tabline#formatter = 'default'
 " navegação entre os buffers
-nnoremap <C-Right> :bn<cr>
-nnoremap <C-Left> :bp<cr>
+nnoremap <M-Right> :bn<cr>
+nnoremap <M-Left> :bp<cr>
 nnoremap <c-x> :bp\|bd #<cr>
 
 ">>>>>> Análise de Código
@@ -89,8 +89,31 @@ map <F5> <Esc>:w<CR>:!clear;python3 %<CR>
 set term=xterm-256color
 
 ">>>> Alternando Linhas
-nnoremap <silent> <s-Down> :m +1<CR>
-nnoremap <silent> <s-Up> :m -2<CR>
+nnoremap <silent> <M-Down> :m +1<CR>
+nnoremap <silent> <M-Up> :m -2<CR>
 
 ">>>>>>>> Copiar com Ctrl+C
-vnoremap <C-c> "+y<CR>
+vnoremap <c-c> "+y<CR>
+
+
+">>>>>>>> Prettier
+packloadall
+
+">>>>>>>>>>>> FZF
+set rtp+=~/.fzf
+
+">>>> NerdCommenter
+filetype plugin on
+let g:NERDSpaceDelims = 1
+let g:NERDDefaultAling = 'left'
+map cc <Plug>NERDCommenterInvert
+
+
+">>>>>>>>>>>>
+set incsearch
+
+
+">>>>>>>
+let g:ctrlp_custom_ignore = '\v[\/]\.(swp|zip)$'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_show_hidden = 1
